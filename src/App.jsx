@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { generateNarrationScript } from './engine'
 
 function App() {
   const [players, setPlayers] = useState(8)
@@ -28,22 +29,12 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      const response = await fetch('/api/generate-script', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(roles)
-      })
-      
-      if (!response.ok) throw new Error("Failed to connect to Python backend")
-      
-      const data = await response.json()
-      setScript(data.script)
+      const generatedScript = generateNarrationScript(roles)
+      setScript(generatedScript)
       setIsNarrating(true)
       setCurrentStep(0)
     } catch (err) {
-      setError(err.message + ". Make sure the backend is running.")
+      setError("Failed to generate script.")
     } finally {
       setLoading(false)
     }
