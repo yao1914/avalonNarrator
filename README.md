@@ -4,8 +4,8 @@
 
 link: https://avalon-narrator.vercel.app/
 
-A web app that narrates the night phase of the board game **The Resistance: Avalon** — 
-so no one needs to memorise the script!
+A web app that narrates the night phase of the board game **The Resistance: Avalon**. 
+So no one needs to memorise the script!
 
 ## Features
 - Supports 5 to 10 players
