@@ -28,6 +28,10 @@ function App() {
   const startNarration = async () => {
     setLoading(true)
     setError(null)
+    
+    // Unlock Web Speech API on mobile browsers by speaking an empty string directly in the click handler
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(''))
+    
     try {
       const generatedScript = generateNarrationScript(roles)
       setScript(generatedScript)
