@@ -1,5 +1,7 @@
 # Avalon Narrator
 
+<img width="1413" height="827" alt="image" src="https://github.com/user-attachments/assets/944f473d-6538-408b-b18e-f349e7ea2e8d" />
+
 link: https://avalon-narrator.vercel.app/
 
 A web app that narrates the night phase of the board game **The Resistance: Avalon** — 
