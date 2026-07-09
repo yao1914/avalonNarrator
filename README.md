@@ -1,3 +1,23 @@
+# Avalon Narrator
+
+link: https://avalon-narrator.vercel.app/
+
+A web app that narrates the night phase of the board game **The Resistance: Avalon** — 
+so no one needs to memorise the script!
+
+## Features
+- Supports 5 to 10 players
+- Roles: Percival, Morgana, Mordred, Oberon
+
+### Built With
+- Python as the original code
+- Translated to javascript using Antigravity  
+- React + Vite (Frontend)
+- Web Speech API (Text-to-Speech)
+- Deployed on Vercel
+
+
+<!-- 
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
